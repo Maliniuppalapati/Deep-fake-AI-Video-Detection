@@ -65,7 +65,7 @@ def analyze_video(video_path, model):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Deepfake Sentinel Video Analysis")
     parser.add_argument("--video", type=str, required=True, help="Path to the video file to analyze")
-    parser.add_argument("--model", type=str, default="Final_Deepfake_Model_CelebDF.keras", help="Path to the trained keras model")
+    parser.add_argument("--model", type=str, default="final_xception_lstm_model_90acc.keras", help="Path to the trained keras model")
     
     args = parser.parse_args()
     

@@ -52,9 +52,10 @@ High recall (91%) ensures the model effectively detects manipulated videos, redu
 ├── inference.py               # Standalone script for testing videos
 ├── requirements.txt           # Python dependencies
 ├── .gitignore                 # Git ignore file
+├── LICENSE                    # MIT License
 └── README.md                  # Documentation  
 
-*(Note: The trained model `Final_Deepfake_Model_CelebDF.keras` is generated after running the notebook and is required for `inference.py` to work.)*
+*(Note: The trained model `final_xception_lstm_model_90acc.keras` is required for `inference.py` to work. You can generate it by running the notebook.)*
 ## 💻 How to Run
 # 1. Clone the repository
 git clone https://github.com/your-username/Deepfake-Sentinel.git
@@ -65,7 +66,7 @@ pip install -r requirements.txt
 
 # 3. Train the model (Optional if you already have the weights)
 Run all cells in `DEEP_FAKE.ipynb` to train the model on the Celeb-DF dataset. 
-This will generate `Final_Deepfake_Model_CelebDF.keras`.
+This will generate `final_xception_lstm_model_90acc.keras`.
 
 # 4. Test a video using the inference script
 python inference.py --video "path_to_video.mp4"
